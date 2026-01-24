@@ -1,0 +1,10 @@
+[Unit]
+Description=dfScript
+
+[Service]
+EnvironmentFile=-/etc/default/dfscript
+ExecStart=/usr/local/sbin/dfscript.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
