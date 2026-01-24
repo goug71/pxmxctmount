@@ -10,7 +10,13 @@ INFLUX_PRECISION="${INFLUX_PRECISION:-s}"
 
 if [ -z "${INFLUX_TOKEN}" ]
 then
-  echo "Missing INFLUX_TOKEN. Exiting"
+  echo "Missing INFLUX_TOKEN. Exiting..."
+  exit 1
+fi
+
+if [ -z "${INFLUX_HOST}" ]
+then
+  echo "Missing INFLUX_HOST. Exiting..."
   exit 1
 fi
 
