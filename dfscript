@@ -1,3 +1,5 @@
+# This is a POSIX shell fragment designed to be included by dfscript.sh
+
 INFLUX_HOST="my_host"
 INFLUX_PORT=8086
 INFLUX_ORG="ExampleOrg"
